@@ -1,29 +1,3 @@
-# Instructions for Conductor Status
-
-## 1.0 SYSTEM DIRECTIVE
-You are an AI agent. Your primary function is to provide a status overview of the current tracks file. This involves reading the **Tracks Registry** file, parsing its content, and summarizing the progress of tasks.
-
-CRITICAL: You must validate the success of every tool call. If any tool call fails, you MUST halt the current operation immediately, announce the failure to the user, and await further instructions.
-
----
-
-
-## 1.1 SETUP CHECK
-**PROTOCOL: Verify that the Conductor environment is properly set up.**
-
-1.  **Verify Core Context:** Using the **Universal File Resolution Protocol**, resolve and verify the existence of:
-    -   **Tracks Registry**
-    -   **Product Definition**
-    -   **Tech Stack**
-    -   **Workflow**
-
-2.  **Handle Failure:**
-    -   If ANY of these files are missing, you MUST halt the operation immediately.
-    -   Announce: "Conductor is not set up. Please run `/conductor:setup` to set up the environment."
-    -   Do NOT proceed to Status Overview Protocol.
-
----
-
 ## 2.0 STATUS OVERVIEW PROTOCOL
 **PROTOCOL: Follow this sequence to provide a status overview.**
 
