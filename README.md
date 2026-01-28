@@ -117,6 +117,17 @@ During implementation, you can also:
 - [Gemini CLI extensions](https://geminicli.com/docs/extensions/): Documentation about using extensions in Gemini CLI
 - [GitHub issues](https://github.com/gemini-cli-extensions/conductor/issues): Report bugs or request features
 
+## Agent Skills & Workflows
+
+Conductor's capabilities are also available as **Agent Skills**, making them compatible with platforms like Google Antigravity.
+
+- **Skills**: Located in the `skills/` directory, these define the core Conductor capabilities (Setup, New Track, Implement, Status, Revert) as standardized Agent Skills.
+- **Workflows**: Located in `.agent/workflows/`, these markdown files define workflows that trigger the specific skills.
+
+To use Conductor with Antigravity:
+1.  Ensure the `skills/` directory is in your project or registered with your agent.
+2.  Use the workflows in `.agent/workflows/` to trigger the desired actions (e.g., `Setup Conductor`, `New Track`, `Implement Track`).
+
 ## Legal
 
 - License: [Apache License 2.0](LICENSE)
